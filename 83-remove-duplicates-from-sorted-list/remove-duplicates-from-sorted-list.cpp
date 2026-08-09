@@ -21,11 +21,13 @@ public:
         while(temp!=NULL){
             if(prev->val == temp->val){
                 temp = temp->next;
-                continue;
-            }
+                
+            }else{
+
             prev->next = temp;
             prev = temp;
             temp = temp->next;
+            }
         }
         prev->next = NULL;
         return head;

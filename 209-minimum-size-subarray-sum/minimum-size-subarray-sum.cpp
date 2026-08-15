@@ -9,7 +9,8 @@ public:
         while(j<n){
             sum+=nums[j];
         while(sum>=target){
-            minL = min(minL,j-i+1);
+            int k = j-i+1;
+            minL = min(minL,k);
             sum-=nums[i];
             i++;
         }

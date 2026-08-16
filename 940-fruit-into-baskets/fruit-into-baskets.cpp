@@ -5,7 +5,7 @@ public:
         int i=0,j=0;
         int maxl = 0;
         int n = fruits.size();
-        if(n ==1)return 1;
+        // if(n ==1)return 1;
 
         while(j<n){
             mp[fruits[j]]++;

@@ -11,13 +11,13 @@ public:
         for(int i=n-2;i>=0;i--){
             suffix[i] = suffix[i+1] + nums[i+1];
         }
-        int k=-1;
+        
         for(int i=0;i<n;i++){
             if(prefix[i]==suffix[i]){
-                k=i;
-                break;
+                return i;
+                
             }
         }
-        return k;
+        return -1;
     }
 };

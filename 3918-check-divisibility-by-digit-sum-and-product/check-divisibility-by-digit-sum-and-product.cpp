@@ -14,6 +14,6 @@ public:
         temp = temp/10;
        }  
        if(n%(sum+prod)==0)return true;
-    return false;
+    else return false;
     }
 };

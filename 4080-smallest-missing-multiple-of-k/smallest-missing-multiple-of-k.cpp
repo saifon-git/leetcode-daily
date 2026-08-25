@@ -4,7 +4,7 @@ public:
         unordered_set<int>mp(nums.begin(),nums.end());
         int multi = k;
 
-        while(mp.find(multi)!=mp.end()){
+        while(mp.count(multi)){
             multi+=k;
         }
         return multi;

@@ -27,6 +27,6 @@ public:
             p = p->next;
             slow= slow->next;
         }
-        return p;
+        return slow;
     }
 };

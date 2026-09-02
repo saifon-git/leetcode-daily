@@ -10,8 +10,8 @@ public:
             mp[num]++;
         }
         for(auto it:mp){
-            if(it.second == 1) ans = it.first;
+            if(it.second == 1) return it.first;
         }
-        return ans;
+        return -1;
     }
 };

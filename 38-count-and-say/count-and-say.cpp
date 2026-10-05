@@ -6,8 +6,8 @@ public:
         string result = "";
 
         for(int i=0;i<say.size();i++){
-            char ch = say[i];
             int cnt = 1;
+            char ch = say[i];
 
             while(i<say.size()-1 && say[i]==say[i+1]){
                 cnt++;

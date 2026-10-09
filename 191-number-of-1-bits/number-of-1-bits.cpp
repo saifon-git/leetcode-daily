@@ -1,13 +1,11 @@
 class Solution {
 public:
     int hammingWeight(int n) {
-        int res = 0;
+        int cnt=0;
 
-        while(n>0){
-            res++;
-            n = n&(n-1);
+        for(int i=31;i>=0;i--){
+            if(((n>>i)&1)==1)cnt++;
         }
-        return res;
+        return cnt;
     }
-
 };

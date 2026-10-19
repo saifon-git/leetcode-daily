@@ -19,6 +19,6 @@ public:
             else b = b->next;
 
         }
-        return b;
+        return a;
     }
 };
